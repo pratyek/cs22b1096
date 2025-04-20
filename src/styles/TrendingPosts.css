@@ -1,0 +1,93 @@
+.trending-posts-container {
+    padding: 20px;
+  }
+  
+  .trending-posts-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .post-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .post-content {
+    padding: 15px;
+  }
+  
+  .post-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .post-content p {
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .post-stats {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 15px 15px;
+    color: #666;
+  }
+  
+  .post-comments {
+    padding: 0 15px 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  .post-comments h4 {
+    margin: 15px 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .comments-list {
+    list-style: none;
+  }
+  
+  .comment {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+  }
+  
+  .comment:last-child {
+    border-bottom: none;
+  }
+  
+  .no-comments {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .no-posts {
+    color: #999;
+    font-style: italic;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
